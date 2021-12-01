@@ -13,7 +13,7 @@ print("yeah this is the current fucking directory you fuck", currentDir)
 
 file = input("file (day1.txt): ")
 filePath = os.path.normpath(os.path.join(currentDir, file))
-print("the text files file path you fuckin hoser: ", filePath)
+#print("the text files file path you fuckin hoser: ", filePath)
 
 openFile = open(filePath, 'r')
 reader = csv.reader(openFile, delimiter = " ")
@@ -28,13 +28,7 @@ finalArray = array.astype(float)
 for i in range(len(finalArray)- 1):
     print(finalArray[i], finalArray[i+1])
     if finalArray[i] < finalArray[i+1]:
-        count += 1
-
-
-
-#print(finalArray)
-
+        count +=
 
 print(count)
-#print(sonarArray)
 print("fuck off")
