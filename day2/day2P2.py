@@ -50,11 +50,9 @@ for i in sonarArray:
       print("aim", aim)
 
 
-#print(sonarArray)
-#print(commandArray)
+
 print("final x: ", x)
-#print("z: ", z)
+
 print("final aim ", aim)
 print("final depth:", finalDepth)
 print(x*finalDepth)
-#print(finalLocation)
