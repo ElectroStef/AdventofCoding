@@ -7,7 +7,8 @@ from pathlib import Path
 
 x = 0;
 z = 0;
-y = 0;
+aim = 0;
+finalDepth = 0;
 sonarArray = []
 
 currentDir = os.getcwd()
@@ -25,22 +26,35 @@ for i in sonarArray:
    commandArray = i.split(' ')
    dir = commandArray[0]
    dis = int(commandArray[1])
-
+   #print(commandArray)
    if dir == "forward":
+      print(commandArray)
       x += dis
+      print("horizontal pos" , x)
+      finalDepth += dis * aim
+      print("depth ", finalDepth)
+      print("aim", aim)
    elif dir == "down":
-      z += dis
+      print(commandArray)
+      #z += dis
+      aim += dis
+      print("horizontal pos" , x)
+      print("depth", finalDepth)
+      print("aim", aim)
    elif dir == "up":
-      y -= dis
+      #z -= dis
+      print(commandArray)
+      aim -= dis
+      print("horizontal pos" , x)
+      print("depth", finalDepth)
+      print("aim", aim)
+
 
 #print(sonarArray)
 #print(commandArray)
-print("x: ", x)
-print("y: ", y) #turns out there is no left right cuz i don't read
-print("z: ", z)
-#print(input[5])
-
-finalZ = z + y
-print("final z:", finalZ)
-finalLocation = x*finalZ
-print(finalLocation)
+print("final x: ", x)
+#print("z: ", z)
+print("final aim ", aim)
+print("final depth:", finalDepth)
+print(x*finalDepth)
+#print(finalLocation)
