@@ -35,7 +35,7 @@ for i in sonarArray:
       #z -= dis
       aim -= dis
 
-print("final horizontal distance: ", x)
-print("final aim ", aim)
-print("final depth:", finalDepth)
+print("final horizontal distance: ",x)
+print("final aim: ",aim)
+print("final depth:",finalDepth)
 print(x*finalDepth)
