@@ -9,11 +9,9 @@ sonarArray = []
 count = 0
 
 currentDir = os.getcwd()
-print("yeah this is the current fucking directory you fuck", currentDir)
 
 file = input("file (day1.txt): ")
 filePath = os.path.normpath(os.path.join(currentDir, file))
-#print("the text files file path you fuckin hoser: ", filePath)
 
 openFile = open(filePath, 'r')
 reader = csv.reader(openFile, delimiter = " ")
@@ -31,4 +29,3 @@ for i in range(len(finalArray)- 1):
         count +=
 
 print(count)
-print("fuck off")
